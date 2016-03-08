@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="../w3.css">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap/css/bootstrap.css">
+
+	<style>
+		html{
+			width: 95%;
+
+		}
+		#resultbar{
+			width: 70%;
+			height: 25px;
+		}
+
+		
+
+	</style>
+		
+		
+<head>
+	<title>Khabroad</title>
+	<script src="../jquery.min.js"> </script>
+
+	<div id="header">
+		<input name="search" type="text" size="90px" id="resultbar">
+		
+		<button type="button" id="searchbutton">Search</button>
+
+		<a href="../index.html""> <img src="../resources/logo.jpg" style="width:200px;height=60px;" id="rlogo""></a>
+	</div>
+	<hr>
+<br>
+<button onclick="createcard()"> One more fucking card </button>
+<br>
+<br>
+
+</head>
+<body>
+
+
+<!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+<div class="row" id="main">
+<div class="col-xs-6 col-md-4">	
+  	<div class="w3-card-4 cards" id="card1">    
+		<header class="w3-container w3-blue">
+			<h1>Vitou Doe</h1>
+		</header>
+		<div class="w3-container">
+			<img src="http://www.alien-dev.com/img/portfolio/vitou.png" width="150px" height="150px">
+			<p> Bacholor of xxxology <br>
+				Research about nature of gay<br>
+				Research on how to reproduce between two men
+
+			</p>
+			<button>Ask</button>
+		</div>
+	</div>
+</div>
+
+
+</div>
+
+	<script>
+
+		function createcard() {
+
+		var layout_div = document.createElement("DIV");//create div tag
+		layout_div.className = "col-xs-6 col-md-4"; //add class to a tag
+
+		var card_div = document.createElement("DIV"); //create another div tag
+		card_div.className = "w3-card-4 cards";
+		layout_div.appendChild(card_div); //add card_div to layout_div
+
+
+		var card_header = document.createElement("HEADER"); //create header tag
+		card_header.className = "w3-container w3-blue"; 
+		card_div.appendChild(card_header);			// add this shit to card_div
+		var h = document.createElement("h1"); //write header
+		var header_text = document.createTextNode("Vitou Doe");  //Name for header
+		h.appendChild(header_text); 	
+		card_header.appendChild(h);     
+
+		var body_div = document.createElement("DIV"); //another div
+		body_div.className = "w3-container";
+		card_div.appendChild(body_div); 
+
+		var image = document.createElement("img");
+		image.src = "http://www.alien-dev.com/img/portfolio/vitou.png";
+		image.width= "150";
+		image.height="150";
+		body_div.appendChild(image);
+
+		var card_body = document.createElement("p");	//card body text
+		var node = document.createTextNode("Bacholor Research on how to reproduce between two me ");
+		card_body.appendChild(node);
+		body_div.appendChild(card_body);
+
+
+		var ask_btn = document.createElement("BUTTON");	//card button
+		var btn_text = document.createTextNode("Ask");
+		ask_btn.appendChild(btn_text);
+		body_div.appendChild(ask_btn);
+
+		document.getElementById('main').appendChild(layout_div); // add this final shit	
+	}
+
+	</script>
+
+</body>
+
+
+
+
+
+
+
+</html>

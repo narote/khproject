@@ -13,8 +13,6 @@
 			height: 25px;
 		}
 
-		
-
 	</style>
 		
 		
@@ -47,7 +45,7 @@
 			<h1>Vitou Doe</h1>
 		</header>
 		<div class="w3-container">
-			<img src="http://www.alien-dev.com/img/portfolio/vitou.png" width="150px" height="150px">
+		
 			<p> Bacholor of xxxology <br>
 				Research about nature of gay<br>
 				Research on how to reproduce between two men
@@ -63,13 +61,13 @@
 
 	<script>
 
-	$.get("http://khabroad.com/mentor", function(result){
+	$.get('http://khabroad.com/mentor', function(result){
 		console.log(result[0].first_name);
 		createcard(result[0].firstname);
-
+		alert(result[0].firstname);
 	});
 
-		function createcard() {
+		function createcard(name) {
 
 		var layout_div = document.createElement("DIV");//create div tag
 		layout_div.className = "col-xs-6 col-md-4"; //add class to a tag
@@ -78,12 +76,11 @@
 		card_div.className = "w3-card-4 cards";
 		layout_div.appendChild(card_div); //add card_div to layout_div
 
-
 		var card_header = document.createElement("HEADER"); //create header tag
 		card_header.className = "w3-container w3-blue"; 
 		card_div.appendChild(card_header);			// add this shit to card_div
 		var h = document.createElement("h1"); //write header
-		var header_text = document.createTextNode("Vitou Doe");  //Name for header
+		var header_text = document.createTextNode(name);  //Name for header
 		h.appendChild(header_text); 	
 		card_header.appendChild(h);     
 
@@ -91,11 +88,11 @@
 		body_div.className = "w3-container";
 		card_div.appendChild(body_div); 
 
-		var image = document.createElement("img");
-		image.src = "http://www.alien-dev.com/img/portfolio/vitou.png";
-		image.width= "150";
-		image.height="150";
-		body_div.appendChild(image);
+	//	var image = document.createElement("img");
+	//	image.src = "http://www.alien-dev.com/img/portfolio/vitou.png";
+	//	image.width = "150";
+	//	image.height = "150";
+	//	body_div.appendChild(image);
 
 		var card_body = document.createElement("p");	//card body text
 		var node = document.createTextNode("Bacholor Research on how to reproduce between two me ");
@@ -111,7 +108,7 @@
 		document.getElementById('main').appendChild(layout_div); // add this final shit	
 	}
 
-// negativity will eat u alive, no matter how strong u are.
+// negativity will eat u alive, no matter who the fuck you are.
 	</script>
 
 </body>

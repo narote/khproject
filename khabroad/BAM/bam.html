@@ -59,10 +59,11 @@ input[type=submit]{
 			<option value="unitedkingdom">United Kingdom</option>
 			<option value="china">China</option>
 		</select>
+		<div id="degreef">
 		<label for="degree">Degree</label>
 		<input type="text" id="degree" name="degree" placeholder="study what, at what country, and which university" id = "d_input" >  
-		<button onclick="moredegree()" id="more_d_button">Multiple Degree</button>
-  
+		<button type="button" onclick="moredegree()" id="more_d_button">Multiple Degree</button>
+  		</div>
 
 		<input type="submit" value="Submit">
 
@@ -70,17 +71,12 @@ input[type=submit]{
 	</form>
 	</div>
 <script >
-		var more_degree = document.createElement("input");
-		more_degree.setAttribute("type", "text");
-		more_degree.setAttribute("id","d_input");
-		document.getElementById("mike").appendChild(more_degree);
-	
 
 	function moredegree(){
 		var more_degree = document.createElement("input");
 		more_degree.setAttribute("type", "text");
 		more_degree.setAttribute("id","d_input");
-		document.getElementById("mike").appendChild(more_degree);
+		document.getElementById("degreef").appendChild(more_degree);
 		
 	}
 

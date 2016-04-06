@@ -63,6 +63,12 @@
 
 	<script>
 
+	$.get("http://khabroad.com/mentor", function(result){
+		console.log(result[0].first_name);
+		createcard(result[0].firstname);
+
+	});
+
 		function createcard() {
 
 		var layout_div = document.createElement("DIV");//create div tag
@@ -105,6 +111,7 @@
 		document.getElementById('main').appendChild(layout_div); // add this final shit	
 	}
 
+// negativity will eat u alive, no matter how strong u are.
 	</script>
 
 </body>
@@ -114,5 +121,5 @@
 
 
 
-
 </html>
+

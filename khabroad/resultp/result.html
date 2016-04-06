@@ -62,9 +62,9 @@
 	<script>
 
 	$.get('http://khabroad.com/mentor', function(result){
-		console.log(result[0].first_name);
-		createcard(result[0].firstname);
-		alert(result[0].firstname);
+		fullname = first_name + " " + last_name;
+		console.log(result[0].fullname);
+		createcard(result[0].fullname);
 	});
 
 		function createcard(name) {

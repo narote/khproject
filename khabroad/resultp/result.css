@@ -1,0 +1,38 @@
+#result_logo{
+	height: 70px;
+}
+
+#result_nav{
+	float: right;
+	margin-right: 10%;
+}
+
+#result_searchbar{
+	width: 40%;
+	height: 40px;
+	display: inline;
+}
+
+#card div{
+	margin-top:15px;
+}
+
+#fuck {
+	/*width: 400px;*/
+}
+
+.cards {
+	margin: 50px;
+}
+
+.result_card_color {
+	background-color: rgb(198,156,109);
+}
+
+.card_benice{
+	width: 200px;
+}
+
+#card_button{
+	text-align: center;
+}

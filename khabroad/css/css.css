@@ -1,5 +1,25 @@
 html { 
-	width: 97%;
+
     margin: 0 auto;
     position:relative;
+}
+
+
+#searchbar{
+    padding: 3px;
+    border: solid 1px #E4E4E4;
+    border-radius: 6px;
+    background-color: #fff;
+    width: 60%;
+    margin:20px;
+}
+
+#homepage_logo{
+	margin-top: 10%;
+	width: 30%;
+}
+
+#nav{
+	float: right;
+	margin-right: 10%;
 }
